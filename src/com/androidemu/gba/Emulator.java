@@ -1,4 +1,4 @@
-package com.androidemu.gba;
+package com.funemulator.gba;
 
 import java.io.File;
 import java.io.IOException;
