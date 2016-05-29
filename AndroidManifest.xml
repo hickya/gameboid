@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-		package="com.androidemu.gba"
+		package="com.funemulator.gba"
 		android:versionCode="6"
-		android:versionName="1.3.2"
+		android:versionName="2.0.0"
 		android:installLocation="preferExternal">
 
 	<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17"/>
@@ -13,7 +13,7 @@
 			android:icon="@drawable/app_icon" android:allowBackup="true">
 <!-- 			android:theme="@style/emuTheme"> -->
 
-		<activity android:name="com.androidemu.EmulatorActivity"
+		<activity android:name="com.funemulator.EmulatorActivity"
 		    android:process=":emulator"
 		    android:launchMode="singleTask"
 		    android:configChanges="orientation|screenSize|keyboardHidden">
@@ -27,8 +27,8 @@
 		    android:label="@string/settings_title"/>
 		
 		<!-- common components - will be omitted after manifest merging support -->
-		<activity android:name="com.androidemu.FileChooser" />
-		<activity android:name="com.androidemu.HelpActivity" />
-		<service android:name="com.androidemu.EmulatorService" android:process=":emulator"/>
+		<activity android:name="com.funemulator.FileChooser" />
+		<activity android:name="com.funemulator.HelpActivity" />
+		<service android:name="com.funemulator.EmulatorService" android:process=":emulator"/>
 	</application>
 </manifest>
